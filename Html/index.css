@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("sun.jpg");
+    display: flex;
+    justify-content: center; /* Horizontally center-align content */
+    align-items: center; /* Vertically center-align content */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+h1{
+    color:blue;
+    text-align: center;
+}
+
+label{
+    display: block;
+    color:black;
+    font-size: large;
+    font-weight: bold;
+}
+.container {
+   
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    margin-top :200px;
+    margin-bottom: 200px;
+    background-image: url("thermo.jpeg");
+    background-size: cover;
+
+}

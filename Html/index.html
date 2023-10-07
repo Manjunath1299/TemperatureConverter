@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: black;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body >
+    <div class="container"> 
+    <h1>Temperature Converter</h1>    
+    <label for="Temp" > Enter the Temperature</label><br>
+    <input type="text" id="Celsius" name="Celsius" placeholder="enter only Celsius">
+    <button onclick="change()">Convert</button>
+    <label>In Fahrenheit =<span id="Fahrenheit"></span><sup>o</sup>F</label><br>
+    <br>
+    <input type="text" id="inFahrenheit" name="inFahrenheit" placeholder="enter only Fahrenheit">
+    <button onclick="change2()">Convert</button>
+    <label>In Celsius =<span id="inCelsius"></span><sup>o</sup>C</label>
+    </div>
+</body>
+    <script>
+        function change(){
+            var input1=document.getElementById("Celsius").value;
+            document.getElementById("Fahrenheit").innerHTML= input1*1.8+32;  
+         }
+         function change2(){
+            var input2=document.getElementById("inFahrenheit").value;
+            document.getElementById("inCelsius").innerHTML= (input2-32)*(5/9);
+         }
+    </script>
+</html>
